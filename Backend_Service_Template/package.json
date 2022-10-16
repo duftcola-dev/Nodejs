@@ -1,0 +1,21 @@
+{
+  "name": "bexy_data_backend",
+  "version": "1.0.0",
+  "description": "Bexy dta backend made with node express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Bexy"
+  ],
+  "author": "Robin Vieara",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.8",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}

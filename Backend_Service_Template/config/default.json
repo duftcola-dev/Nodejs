@@ -1,0 +1,10 @@
+{   
+    "server":{
+        "host":"localhost",
+        "port":8000,
+        "auto_restart":false,
+        "secret":"",
+        "ssl_key":"",
+        "ssl_cert":""
+    }
+}

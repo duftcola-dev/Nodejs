@@ -1,0 +1,18 @@
+{   
+    "server":{
+        "host":"localhost",
+        "port":8000,
+        "auto_restart":false,
+        "secret":"348hdia7e_7ayihsuh_di8y31weq",
+        "ssl_key":"",
+        "ssl_cert":""
+    },
+    "database":{
+        "type":"MongoAtlas",
+        "name":"credentials",
+        "user":"admin",
+        "password":"admin",
+        "host":"localhost",
+        "port":5432
+    }
+}

@@ -1,0 +1,17 @@
+{   
+    "server":{
+        "host":"$host",
+        "port":$port,
+        "auto_restart":$auto_restart,
+        "secret":"$secret",
+        "ssl_key":"$ssl_key",
+        "ssl_cert":"$ssl_cert"
+    },
+    "databases":{
+        "name":"$name",
+        "user":"$user",
+        "password":"$password",
+        "host":"$host",
+        "port":$port
+    }
+}
