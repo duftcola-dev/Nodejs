@@ -2,7 +2,7 @@
     "server":{
         "host":"localhost",
         "port":8000,
-        "auto_restart":false,
+        "cluster":false,
         "secret":"348hdia7e_7ayihsuh_di8y31weq",
         "ssl_key":"",
         "ssl_cert":""

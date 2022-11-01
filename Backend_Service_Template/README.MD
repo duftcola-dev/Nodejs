@@ -190,13 +190,14 @@ Clone this repository.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Develop cluster mode functionality
+- [x] Develop cluster mode functionality
 - [ ] Develop broker optional features
 - [ ] Develop scripts for automation
 - [ ] Develop swagger/rest api doc 
 - [ ] Develop testing features
 - [ ] Develop CICD with docker
 - [ ] Develop github workflows
+- [ ] Create production layout
 
 
 See the [open issues](https://github.com/duftcola-dev/Nodejs/issues) for a full list of proposed features (and known issues).
