@@ -1,7 +1,7 @@
 # Configuration folder 
 
     - Configurations files are stored here.
-    - By default, the default.json configuration file is used.
+    - By default, the default.json configuration file is used if no NODE_ENV="" value is specified.
     - Which configuration file is used at run time deppends on the ENV variable NODE_ENV.
     - If NODE_ENV has no value then default.json is used.
 
@@ -15,7 +15,12 @@
     - To start the app with an especific configuration file :
 
         export NODE_ENV=dev 
-        npm index
-    
+        node index
+
+        or 
+
+        export NODE_ENV=dev 
+        npm start
+
     - You can also store your environment variables at env/.env
       in which case they are loaded enmediately.

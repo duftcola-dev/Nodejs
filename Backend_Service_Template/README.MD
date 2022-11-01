@@ -31,21 +31,27 @@
 <br />
 <div align="center">
   <a href="https://github.com/duftcola-dev/SWAGGER_CLI">
-    <img src="media/logo.png" alt="Logo" width="80" height="80">
+    <img src="doc/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Swagger cli</h3>
+<h3 align="center">Nodejs Service Tamplate</h3>
 
   <p align="center">
-    This is a cli that allows to make an easy use of the Swagger api on a local machine.
-    The cli allows to clone and build the nescessary deppendencies as well as launch the
-    swagger editor and the code generator console. So far the project have only been developed and tested 
-    in Ubuntu 20.4 so there is no assurance that it will work on Windows. 
+    This is a template for creating services based on Nodejs-Express. This template allows 
+    to create backend services quickly of any size. Template comes by default with features lik : </p>
+    <hr>
+    <h4>Configuration based on environment</h4>
+    <p>Which configuration is selected is based on the NODE_ENV environemnt variable.
+    <ul>
+      <li>NODE_ENV="" ---> default configuration</li>
+      <li>NODE_ENV=dev ---> development configuration</li>
+      <li>NODE_ENV=prod ---> production configuration</li>
+      <li>NODE_ENV=test ---> test configuration</li>
+    </ul>
+    <hr>
+    <h4>Create and load your oen env variables</h4>
+    <p>Your ENV variables cna be stored at env/.env and loaded at boot time.</p>
 
-    To make it clear you will need both the editor and code generator.
-    The editor for generating rest api studs and server side documentation and the
-    code generator to convert this documentation in usefull code.
-  </p>
 </div>
 
 
@@ -95,9 +101,7 @@
 
 ### Built With
 
-* [![Python][Python.py]][Python-url]
-* [![Click][Click]][Click-url]
-* [![Swagger][Swagger]][Swagger-url]
+* [![Nodejs][Node.js]][Node-url]
 * [![Docker][Docker]][Docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -106,77 +110,78 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Download the <a href="">release</a> version. This is a cleaner repository without
-some media files you may not want.
+This project was made with Nodejs v18.12.0
+In order to use this project is nescessary to have nodejs installed.
+Clone this repository.
+
 ### Prerequisites
 
-* pip
-  ```sh
-  pip install -r requirements.txt --upgrade pip
-  ```
+* This project was made with Nodejs v18.12.0
+* In order to use this project is nescessary to have nodejs installed.
+
 ### Installation
 
-1. Clone the swagger codegen repository by running:
+1. Install deppendencies
    ```sh
-   python cli clone
+   npm install
    ```
-2. Pull the swagger editor
-   ```sh
-   python cli pull
-   ```
-3. Build deppendecies (java vm). Also installs tkinter version == your python version.
-   ```sh
-   python cli build
-   ```
-4. Launch your editor.
-   ```sh
-   python cli launch
-   ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-```sh
-  python cli 
-```
-  - This is the most basic command. It will display all the availabe options 
-```sh
-  python cli <option> --help 
-```
-  - Will display the options/flags avaible for a command.
-  - Also instructions for its usage.
-```sh
-  python cli build 
-```
-  - Builds the required deppendencies
-```sh
-  python cli clone 
-```
-  - Clones the swagger code generator repository
-```sh
-  python cli launch
-```
-  - Launches the editor in your local machine on your localhost:8000/ by default.
-  - options:
-    - --build : Forces to build a new container for the editor.
-    - --url : Specifies a url to launch the editor. (default localhost)
-    - --port : Specifies a port to launch the editor. (default 8000)
-```sh
-  python cli remove
-```
-  - Removes the editor container if exists.
-```sh
-  python cli template
-```
-  - Launches the editor on localhost:8000 using the specified .json/.yml template.
-  - options:
-    - --interactive : Opens a file browser to select the template file.
-    - --path : Absolute path to the template file. (manual option)
-  
 
+1. Edit your configuration files and environment variables.
+  ```sh
+    Backend_Service_Template/
+                  config/
+                      default.json/
+                      dev.json/
+                      prod.json/
+                      test.json/
+  ```
+  - Configurations files are stored here.
+  - By default, the default.json configuration file is used if no NODE_ENV="" value is specified.
+  - Which configuration file is used at run time deppends on the ENV variable NODE_ENV.
+  - If NODE_ENV has no value then default.json is used.
 
+2. Edit your dev.json | prod.json | test.json configuration files.
+  ```sh
+    {   
+      "server":{
+          "host":"localhost",
+          "port":8000,
+          "auto_restart":true,
+          "secret":"",
+          "ssl_key":"",
+          "ssl_cert":""
+      },
+      "database":{
+          "type":"",
+          "name":"",
+          "user":"",
+          "password":"",
+          "host":"",
+          "port":0
+      }
+    }
+  ```
+  - server : Section related to the basic parameters of your application
+  - database : Database connector parameters.
+  - (This section is incompleted and will be expanded in the future)
+
+3. Initialize your application
+  ```sh
+    export NODE_ENV=dev
+    npm start
+  ```
+  - Optionally you can also use :
+
+  ```sh
+    export NODE_ENV=dev
+    node index
+  ```
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -184,14 +189,16 @@ some media files you may not want.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [*] Develop cli skeleton
-- [*] Develop Swagger editor cli
-- [ ] Create unittest for Swagger editor cli
-- [ ] Develop codegen cli
-- [ ] Create unittest codegen cli (Therefore code gen is not fully tested yet)
+- [ ] Develop cluster mode functionality
+- [ ] Develop broker optional features
+- [ ] Develop scripts for automation
+- [ ] Develop swagger/rest api doc 
+- [ ] Develop testing features
+- [ ] Develop CICD with docker
+- [ ] Develop github workflows
 
 
-See the [open issues](https://github.com/duftcola-dev/SWAGGER_CLI/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/duftcola-dev/Nodejs/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,7 +206,7 @@ See the [open issues](https://github.com/duftcola-dev/SWAGGER_CLI/issues) for a 
 <!-- LICENSE -->
 ## License
 
-Distributed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License.</a>
+Distributed under the <a href="https://github.com/nodejs/node/blob/main/LICENSE">Nodejs</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,7 +224,7 @@ Robin Viera - robinviera@hotmail.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* This is an unfinished project an some features may not work yet.
+* This is an unfinished project an some features may not work yet or not be implemented.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,11 +241,11 @@ Robin Viera - robinviera@hotmail.com
 [issues-shield]: https://img.shields.io/github/issues/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
 [issues-url]: https://github.com/duftcola-dev/SWAGGER_CLI/issues
 [license-shield]: https://img.shields.io/github/license/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
-[license-url]: https://github.com/duftcola-dev/SWAGGER_CLI/blob/master/LICENSE.txt
+[license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
 [MitLicense-url]:https://choosealicense.com/licenses/mit/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/robin-viera-17aa2378/
 [product-screenshot]: images/screenshot.png
 [Docker]:https://img.shields.io/badge/Docker-037ffc?style=for-the-badge&logo=docker&logoColor=white
 [Docker-url]:https://www.docker.com/
@@ -250,6 +257,8 @@ Robin Viera - robinviera@hotmail.com
 [Python-url]:https://www.python.org/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
+[Node.js]: https://img.shields.io/badge/node.js-06ba0c?style=for-the-badge&logo=nodejs&logoColor=white
+[Node-url]: https://nodejs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
