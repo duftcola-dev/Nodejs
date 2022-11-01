@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/duftcola-dev/SWAGGER_CLI">
+  <a href="https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template">
     <img src="doc/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -76,13 +76,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p>Execute : python cli to display the user manual and options</p>
+<p>Set the application environment</p>
 
-![](https://github.com/duftcola-dev/SWAGGER_CLI/blob/master/media/open_cli.gif)
+![](https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/doc/env.gif)
 
-<p>Execute : python cli launch to execute the swagger editor on your localhost</p>
+<p>Launch the application.</p>
 
-![](https://github.com/duftcola-dev/SWAGGER_CLI/blob/master/media/launching.gif)
+![](https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/doc/launch.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,7 +208,7 @@ See the [open issues](https://github.com/duftcola-dev/Nodejs/issues) for a full 
 <!-- LICENSE -->
 ## License
 
-Distributed under the <a href="https://github.com/nodejs/node/blob/main/LICENSE">Nodejs</a>
+Distributed under the <a href="https://github.com/nodejs/node/blob/main/LICENSE">Nodejs license</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
