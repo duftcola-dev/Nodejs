@@ -192,6 +192,7 @@ Clone this repository.
 
 - [x] Develop cluster mode functionality
 - [ ] Develop broker optional features
+- [ ] Develop threading functinalities
 - [ ] Develop scripts for automation
 - [ ] Develop swagger/rest api doc 
 - [ ] Develop testing features
