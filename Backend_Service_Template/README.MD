@@ -134,6 +134,19 @@ Clone this repository.
   - Which configuration file is used at run time deppends on the ENV variable NODE_ENV.
   - If NODE_ENV has no value then default.json is used.
 
+  ```sh
+    Backend_Service_Template/
+                  env/.env
+                  config/
+                      default.json/
+                      dev.json/
+                      prod.json/
+                      test.json/
+  ``` 
+  - Additional ENV varaibles can be placed at env/.env.
+  - This varaibles are loaded during boot. However NODE_ENV must be se manually 
+    and cannot be stored at env/.env
+
 2. Edit your dev.json | prod.json | test.json configuration files.
   ```sh
     {   
