@@ -34,11 +34,11 @@
     <img src="doc/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Nodejs Service Tamplate</h3>
+<h3 align="center">Nodejs App Template</h3>
   <p align="center">
     This is a template for creating services based on Nodejs-Express. This template allows 
-    to create backend services quickly of any size. The template comes with with features like 
-    configuration based on ENV varaiblers, loading of .env files, routers , automation scripts 
+    to create backend services quickly of any size. The template comes with features like 
+    configuration based on ENV variables, loading of .env files, routers , automation scripts 
     and database connectors. 
   </p>
 </div>
@@ -64,7 +64,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
