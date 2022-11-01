@@ -82,7 +82,7 @@
 
 <p>Launch the application.</p>
 
-![](https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/doc/launch.gif)
+![](https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/doc/launch.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,15 +234,15 @@ Robin Viera - robinviera@hotmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
-[forks-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
-[stars-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
-[issues-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/issues
-[license-shield]: https://img.shields.io/github/license/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/duftcola-dev/Nodejs.svg?style=for-the-badge
+[contributors-url]: https://github.com/duftcola-dev/Nodejs/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/duftcola-dev/Nodejs.svg?style=for-the-badge
+[forks-url]: https://github.com/duftcola-dev/Nodejs/network/members
+[stars-shield]: https://img.shields.io/github/stars/duftcola-dev/Nodejs.svg?style=for-the-badge
+[stars-url]: https://github.com/duftcola-dev/Nodejs/stargazers
+[issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs.svg?style=for-the-badge
+[issues-url]: https://github.com/duftcola-dev/duftcola-dev/Nodejs
+[license-shield]: https://img.shields.io/github/license/duftcola-dev/Nodejs.svg?style=for-the-badge
 [license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
 [MitLicense-url]:https://choosealicense.com/licenses/mit/
