@@ -35,23 +35,12 @@
   </a>
 
 <h3 align="center">Nodejs Service Tamplate</h3>
-
   <p align="center">
     This is a template for creating services based on Nodejs-Express. This template allows 
-    to create backend services quickly of any size. Template comes by default with features lik : </p>
-    <hr>
-    <h4>Configuration based on environment</h4>
-    <p>Which configuration is selected is based on the NODE_ENV environemnt variable.
-    <ul>
-      <li>NODE_ENV="" ---> default configuration</li>
-      <li>NODE_ENV=dev ---> development configuration</li>
-      <li>NODE_ENV=prod ---> production configuration</li>
-      <li>NODE_ENV=test ---> test configuration</li>
-    </ul>
-    <hr>
-    <h4>Create and load your oen env variables</h4>
-    <p>Your ENV variables cna be stored at env/.env and loaded at boot time.</p>
-
+    to create backend services quickly of any size. The template comes with with features like 
+    configuration based on ENV varaiblers, loading of .env files, routers , automation scripts 
+    and database connectors. 
+  </p>
 </div>
 
 
