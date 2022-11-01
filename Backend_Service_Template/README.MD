@@ -234,15 +234,15 @@ Robin Viera - robinviera@hotmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
-[contributors-url]: https://github.com/duftcola-dev/SWAGGER_CLI/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
-[forks-url]: https://github.com/duftcola-dev/SWAGGER_CLI/network/members
-[stars-shield]: https://img.shields.io/github/stars/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
-[stars-url]: https://github.com/duftcola-dev/SWAGGER_CLI/stargazers
-[issues-shield]: https://img.shields.io/github/issues/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
-[issues-url]: https://github.com/duftcola-dev/SWAGGER_CLI/issues
-[license-shield]: https://img.shields.io/github/license/duftcola-dev/SWAGGER_CLI.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
+[forks-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
+[stars-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
+[issues-url]: https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/issues
+[license-shield]: https://img.shields.io/github/license/Nodejs/tree/master/Backend_Service_Template.svg?style=for-the-badge
 [license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
 [MitLicense-url]:https://choosealicense.com/licenses/mit/
