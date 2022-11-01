@@ -82,7 +82,7 @@
 
 <p>Launch the application.</p>
 
-![](https://github.com/duftcola-dev/Nodejs/tree/master/Backend_Service_Template/doc/launch.gif)
+![](https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/doc/launch.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
