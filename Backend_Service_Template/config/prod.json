@@ -2,7 +2,7 @@
     "server":{
         "host":"$host",
         "port":$port,
-        "auto_restart":$auto_restart,
+        "cluster":$cluster,
         "secret":"$secret",
         "ssl_key":"$ssl_key",
         "ssl_cert":"$ssl_cert"

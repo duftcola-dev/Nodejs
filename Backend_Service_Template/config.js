@@ -41,6 +41,7 @@ function init(){
         port:load_config.get("server.port"),
         host:load_config.get("server.host"),
         secret:load_config.get("server.secret"),
+        cluster:load_config.get("server.cluster"),
         database_type:load_config.get("database.type"),
         database_name:load_config.get("database.name"),
         database_user:load_config.get("database.user"),
@@ -51,30 +52,6 @@ function init(){
     return CONFIG;
 }
 
-function show_app_env(CONFIG){
-    /**
-     * This shows what parameters and 
-     * NODE_ENV the app is using currently.
-     */
-     let configuration="default";
-    if((process.env.NODE_ENV=="dev")||(process.env.NODE_ENV=="test")){
-        
-        if (process.env.NODE_ENV=="dev"){
-            configuration="development";
-        }
-        if (process.env.NODE_ENV=="test"){
-            configuration="testing";
-        }
-        if (process.env.NODE_ENV=="prod"){
-            configuration="production";
-        }
-    }
-    console.log(`- config:${configuration}`);
-    console.log(`- hots:${CONFIG.host}`);
-    console.log(`- port:${CONFIG.port}`);
-    console.log(`- env:${process.env.NODE_ENV}`);
-}
 module.exports={
     init,
-    show_app_env
 }
