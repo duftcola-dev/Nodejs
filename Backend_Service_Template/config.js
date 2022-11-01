@@ -53,28 +53,26 @@ function init(){
 
 function show_app_env(CONFIG){
     /**
-     * Show the main parameters of the app.
-     * This is used to check what parameter the app is using to run.
-     * Only used in dev and test
+     * This shows what parameters and 
+     * NODE_ENV the app is using currently.
      */
-
+     let configuration="default";
     if((process.env.NODE_ENV=="dev")||(process.env.NODE_ENV=="test")){
-        let mode="";
+        
         if (process.env.NODE_ENV=="dev"){
-            mode="development";
+            configuration="development";
         }
         if (process.env.NODE_ENV=="test"){
-            mode="testing";
+            configuration="testing";
         }
-        console.log(`
-        - mode:${mode} \n
-        - hots:${CONFIG.host} \n 
-        - port:${CONFIG.port} \n 
-        - env:${process.env.NODE_ENV} \n
-        `);
-    }else{
-        console.log("Server up");
+        if (process.env.NODE_ENV=="prod"){
+            configuration="production";
+        }
     }
+    console.log(`- config:${configuration}`);
+    console.log(`- hots:${CONFIG.host}`);
+    console.log(`- port:${CONFIG.port}`);
+    console.log(`- env:${process.env.NODE_ENV}`);
 }
 module.exports={
     init,

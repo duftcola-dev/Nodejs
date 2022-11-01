@@ -1,13 +1,13 @@
 {
-  "name": "bexy_data_backend",
+  "name": "backend_template",
   "version": "1.0.0",
-  "description": "Bexy dta backend made with node express",
+  "description": "Node Express Backend-Template",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index"
   },
   "keywords": [
-    "Bexy"
+    "Template"
   ],
   "author": "Robin Vieara",
   "license": "ISC",

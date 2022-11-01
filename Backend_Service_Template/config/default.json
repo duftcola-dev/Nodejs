@@ -2,9 +2,17 @@
     "server":{
         "host":"localhost",
         "port":8000,
-        "auto_restart":false,
+        "auto_restart":true,
         "secret":"",
         "ssl_key":"",
         "ssl_cert":""
+    },
+    "database":{
+        "type":"",
+        "name":"",
+        "user":"",
+        "password":"",
+        "host":"",
+        "port":0
     }
 }
