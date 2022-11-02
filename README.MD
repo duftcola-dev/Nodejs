@@ -191,13 +191,12 @@ Clone this repository.
 ## Roadmap
 
 - [x] Develop cluster mode functionality
-- [ ] Develop broker optional features
 - [ ] Develop threading functionalities
 - [x] Develop scripts for automation
 - [ ] Develop swagger/rest api doc 
-- [ ] Develop testing features
+- [x] Develop testing features
 - [x] Develop CICD with docker
-- [ ] Develop github workflows
+- [ ] Develop github/bitbucket workflows/pipelines
 - [ ] Create production layout
 
 
