@@ -25,5 +25,17 @@
   "devDependencies": {
     "express": "^4.18.2",
     "mocha": "^10.1.0"
-  }
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duftcola-dev/Nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duftcola-dev/Nodejs/issues"
+  },
+  "homepage": "https://github.com/duftcola-dev/Nodejs#readme"
 }
