@@ -243,7 +243,7 @@ Robin Viera - robinviera@hotmail.com
 [issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs.svg?style=for-the-badge
 [issues-url]: https://github.com/duftcola-dev/duftcola-dev/Nodejs
 [license-shield]: https://img.shields.io/github/license/duftcola-dev/Nodejs.svg?style=for-the-badge
-[license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/LICENSE.txt
+[license-url]: https://github.com/duftcola-dev/Nodejs/blob/develop/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
 [MitLicense-url]:https://choosealicense.com/licenses/mit/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
