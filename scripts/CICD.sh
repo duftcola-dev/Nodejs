@@ -14,7 +14,7 @@ fi
 # Run docker container
 if [ "$1" = "run" ];then
     echo "Running docker image: "$image
-    docker run -td -p 0.0.0.0:8000:8000 -e NODE_ENV=dev --name node_service $image
+    docker run -td -p 0.0.0.0:8000:8000 -e CI=true -e NODE_ENV=dev --name node_service $image
 fi
 #Execute test
 if [ "$1" = "test" ];then
