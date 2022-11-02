@@ -150,7 +150,7 @@ Clone this repository.
   ```sh
     {   
       "server":{
-          "host":"localhost",
+          "host":"0.0.0.0",
           "port":8000,
           "auto_restart":true,
           "secret":"",
@@ -191,13 +191,12 @@ Clone this repository.
 ## Roadmap
 
 - [x] Develop cluster mode functionality
-- [ ] Develop broker optional features
-- [ ] Develop threading functinalities
-- [ ] Develop scripts for automation
+- [ ] Develop threading functionalities
+- [x] Develop scripts for automation
 - [ ] Develop swagger/rest api doc 
-- [ ] Develop testing features
-- [ ] Develop CICD with docker
-- [ ] Develop github workflows
+- [x] Develop testing features
+- [x] Develop CICD with docker
+- [ ] Develop github/bitbucket workflows/pipelines
 - [ ] Create production layout
 
 
@@ -244,7 +243,7 @@ Robin Viera - robinviera@hotmail.com
 [issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs.svg?style=for-the-badge
 [issues-url]: https://github.com/duftcola-dev/duftcola-dev/Nodejs
 [license-shield]: https://img.shields.io/github/license/duftcola-dev/Nodejs.svg?style=for-the-badge
-[license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/LICENSE.txt
+[license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
 [MitLicense-url]:https://choosealicense.com/licenses/mit/
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555

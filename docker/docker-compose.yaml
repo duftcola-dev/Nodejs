@@ -1,0 +1,12 @@
+version: "2"
+services:
+  node:
+    image: "nodeservice/backend"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=dev
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "8000"
+    command: "npm start"

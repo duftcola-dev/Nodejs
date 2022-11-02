@@ -4,7 +4,13 @@
   "description": "Node Express Backend-Template",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "build": "bash ./scripts/CICD.sh build",
+    "up": "bash ./scripts/CICD.sh run",
+    "coverage": "newman run ./test/newman/test_postman_collection.json",
+    "test": "mocha",
+    "stop": "bash ./scripts/CICD.sh stop",
+    "clear": "bash ./scripts/CICD.sh clear"
   },
   "keywords": [
     "Template"
@@ -13,9 +19,11 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.3.8",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "newman": "^5.3.2"
   },
   "devDependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mocha": "^10.1.0"
   }
 }
