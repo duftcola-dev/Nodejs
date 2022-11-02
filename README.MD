@@ -150,7 +150,7 @@ Clone this repository.
   ```sh
     {   
       "server":{
-          "host":"localhost",
+          "host":"0.0.0.0",
           "port":8000,
           "auto_restart":true,
           "secret":"",
@@ -192,11 +192,11 @@ Clone this repository.
 
 - [x] Develop cluster mode functionality
 - [ ] Develop broker optional features
-- [ ] Develop threading functinalities
-- [ ] Develop scripts for automation
+- [ ] Develop threading functionalities
+- [x] Develop scripts for automation
 - [ ] Develop swagger/rest api doc 
 - [ ] Develop testing features
-- [ ] Develop CICD with docker
+- [x] Develop CICD with docker
 - [ ] Develop github workflows
 - [ ] Create production layout
 
