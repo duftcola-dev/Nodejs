@@ -4,7 +4,12 @@
   "description": "Node Express Backend-Template",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "build": "bash ./scripts/CICD.sh build",
+    "up": "bash ./scripts/CICD.sh run",
+    "test": "bash ./scripts/CICD.sh test",
+    "stop": "bash ./scripts/CICD.sh stop",
+    "clear": "bash ./scripts/CICD.sh clear"
   },
   "keywords": [
     "Template"

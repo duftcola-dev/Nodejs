@@ -1,0 +1,6 @@
+docker/
+venv/
+doc/
+scripts/
+LICENSE.txt
+README.md
