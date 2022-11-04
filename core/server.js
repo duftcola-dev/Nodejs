@@ -14,18 +14,19 @@ function show_app_env(CONFIG){
      * This shows what parameters and 
      * NODE_ENV the app is using currently.
      */
-     let configuration="default";
-    if((process.env.NODE_ENV=="dev")||(process.env.NODE_ENV=="test")){
+   
         
-        if (process.env.NODE_ENV=="dev"){
-            configuration="development";
-        }
-        if (process.env.NODE_ENV=="test"){
-            configuration="testing";
-        }
-        if (process.env.NODE_ENV=="prod"){
-            configuration="production";
-        }
+    if (CONFIG.tag=="dev"){
+        configuration="development";
+    }
+    if (CONFIG.tag=="test"){
+        configuration="testing";
+    }
+    if (CONFIG.tag=="prod"){
+        configuration="production";
+    }
+    if (CONFIG.tag=="default"){
+        configuration="default";
     }
     console.log(`- config:${configuration}`);
     console.log(`- hots:${CONFIG.host}`);
@@ -47,7 +48,7 @@ function cluster_mode(app,CONFIG){
     if (cluster.isMaster){
         console.log("Running on cluster mode.")
         console.log(`Number of Cpus: ${n_cpus}`)
-        console.log(`Master process: ${process.pid} is running`)  
+        console.log(`Master process: ${process.pid} is running`) 
         show_app_env(CONFIG); 
         for(let i = 0; i < n_cpus; i++){
             cluster.fork();
@@ -68,6 +69,8 @@ function single_instance_mode(app,CONFIG){
     /*Single instance mode.
     This is the default operational behavior of a Nodejs application.
     A single server instance listening through a single port in a host machine.
+    When in production mode PM2 wrapps the application and is responsible of create
+    the cluster.
     */
     app.listen(CONFIG.port,CONFIG.host,() => { // start app on port:host
         console.log("Server running.");

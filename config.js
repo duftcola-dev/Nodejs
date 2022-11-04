@@ -38,16 +38,13 @@ function init(){
      * Load the configuration according to NODE_ENV
      */
     let CONFIG ={
+        tag:load_config.get("configuration.tag"),
         port:load_config.get("server.port"),
         host:load_config.get("server.host"),
         secret:load_config.get("server.secret"),
         cluster:load_config.get("server.cluster"),
-        database_type:load_config.get("database.type"),
-        database_name:load_config.get("database.name"),
-        database_user:load_config.get("database.user"),
-        database_password:load_config.get("database.password"),
-        database_host:load_config.get("database.host"),
-        database_port:load_config.get("database.port"),
+        secure_headers:load_config.get("server.secure_headers"),
+        services:load_config.get("services"),
     }
     return CONFIG;
 }

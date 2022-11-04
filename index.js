@@ -6,7 +6,9 @@
 const express=require("express");
 const config=require("./config.js");
 const routers=require("./routing/routing.js");
-const app_core=require("./core/core.js");
+const app_core=require("./core/server.js");
+const security=require("./core/security.js");
+
 
 //-----------------------------------------------------
 
@@ -16,9 +18,10 @@ const app_core=require("./core/core.js");
  */
 function init_app(){
     let app=express(); // main server instance 
-    APP_CONFIG=config.init(); // loading configuration
+    const app_config=config.init(); // loading configuration
+    app=security.init(app,app_config); // load security options **must be loaded before core and routers
     app=routers.init(app); // loading routers
-    app_core.init(app,APP_CONFIG); // cluster | single instance
+    app_core.init(app,app_config); // cluster | single instance
 }
 
 //-----------------------------------------------------

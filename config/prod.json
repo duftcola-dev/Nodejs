@@ -1,17 +1,24 @@
 {   
-    "server":{
-        "host":"$host",
-        "port":$port,
-        "cluster":$cluster,
-        "secret":"$secret",
-        "ssl_key":"$ssl_key",
-        "ssl_cert":"$ssl_cert"
+    "configuration":{
+        "tag":"prod"
     },
-    "databases":{
-        "name":"$name",
-        "user":"$user",
-        "password":"$password",
-        "host":"$host",
-        "port":$port
+    "server":{
+        "host":"0.0.0.0",
+        "port":8000,
+        "cluster":false,
+        "secure_headers":true,
+        "secret":"348hdia7e_7ayihsuh_di8y31weq",
+        "ssl_key":"",
+        "ssl_cert":""
+    },
+    "services":{
+        "database":{
+            "type":"MongoAtlas",
+            "name":"credentials",
+            "user":"admin",
+            "password":"admin",
+            "host":"localhost",
+            "port":5432
+        }
     }
 }
