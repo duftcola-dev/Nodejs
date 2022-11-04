@@ -37,13 +37,22 @@
 <h3 align="center">Nodejs App Template</h3>
   <p align="center">
     This is a template for creating services based on Nodejs-Express. This template allows 
-    to create backend services quickly of any size. The template comes with features like 
-    configuration based on ENV variables, loading of .env files, routers , automation scripts 
-    and database connectors. 
+    to create backend services quickly of any size. The template comes by default with the following features:
   </p>
+  <ul>
+  <li>Configuration files for production , development and testing</li>
+  <li>Configuration based on environemnt variables</li>
+  <li>Routing</li>
+  <li>Scripts and automation for launching development and production</li>
+  <li>Scripts and automation to create and launch docker and docker-compose containers</li>
+  <li>Unittest with Mocha</li>
+  <li>Unittest and coverage with Postman/Newman</li>
+  <li>Production environment with PM2</li>
+  <li>Secure headers with Helmet</li>
+  <li>File upload (in progress)</li>
+  <li>File download (in progress)</li>
+  </ul>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,15 +86,13 @@
 
 <p>Set the application environment</p>
 
-![](https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/doc/env.gif)
+![](https://github.com/duftcola-dev/Nodejs/blob/master/doc/env.gif)
 
 <p>Launch the application.</p>
 
-![](https://github.com/duftcola-dev/Nodejs/blob/master/Backend_Service_Template/doc/launch.gif)
+![](https://github.com/duftcola-dev/Nodejs/blob/master/doc/launch.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
@@ -93,6 +100,7 @@
 * [![Docker][Docker]][Docker-url]
 * [![Mocha][Mocha]][Mocha-url]
 * [![PM2][PM2]][PM2-url]
+* [![Helmet][Helmet]][Helmet-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,13 +109,11 @@
 ## Getting Started
 
 This project was made with Nodejs v18.12.0
-In order to use this project is nescessary to have nodejs installed.
-Clone this repository.
+In order to use this project is nescessary to have nodejs and npm installed.
 
 ### Prerequisites
 
-* This project was made with Nodejs v18.12.0
-* In order to use this project is nescessary to have nodejs installed.
+* Clone this repository.
 
 ### Installation
 
@@ -193,13 +199,14 @@ Clone this repository.
 ## Roadmap
 
 - [x] Develop cluster mode functionality
-- [ ] Develop threading functionalities
+- [ ] Develop streaming functionalities
+- [ ] Develop file upload/doenload functionalities
 - [x] Develop scripts for automation
-- [ ] Develop swagger/rest api doc 
+- [ ] Develop swagger/rest api finctionalities 
 - [x] Develop testing features
 - [x] Develop CICD with docker
-- [ ] Develop github/bitbucket workflows/pipelines
-- [ ] Create production layout
+- [x] Develop github/bitbucket workflows/pipelines
+- [x] Create production layout
 
 
 See the [open issues](https://github.com/duftcola-dev/Nodejs/issues) for a full list of proposed features (and known issues).
@@ -252,6 +259,8 @@ Robin Viera - robinviera@hotmail.com
 [linkedin-url]: https://www.linkedin.com/in/robin-viera-17aa2378/
 [product-screenshot]: images/screenshot.png
 [Docker]:https://img.shields.io/badge/Docker-037ffc?style=for-the-badge&logo=docker&logoColor=white
+[Helmet]:https://img.shields.io/badge/Helmet-fcfbfa?style=for-the-badge&logo=helmet&logoColor=black
+[Helmet-url]:https://helmetjs.github.io/
 [Mocha-url]:https://mochajs.org/
 [Mocha]:https://img.shields.io/badge/Mocha-995809?style=for-the-badge&logo=mocha&logoColor=white
 [PM2-url]:https://pm2.keymetrics.io/
