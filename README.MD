@@ -91,6 +91,8 @@
 
 * [![Nodejs][Node.js]][Node-url]
 * [![Docker][Docker]][Docker-url]
+* [![Mocha][Mocha]][Mocha-url]
+* [![PM2][PM2]][PM2-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -241,7 +243,7 @@ Robin Viera - robinviera@hotmail.com
 [stars-shield]: https://img.shields.io/github/stars/duftcola-dev/Nodejs.svg?style=for-the-badge
 [stars-url]: https://github.com/duftcola-dev/Nodejs/stargazers
 [issues-shield]: https://img.shields.io/github/issues/duftcola-dev/Nodejs.svg?style=for-the-badge
-[issues-url]: https://github.com/duftcola-dev/duftcola-dev/Nodejs
+[issues-url]: https://github.com/duftcola-dev/Nodejs/issues
 [license-shield]: https://img.shields.io/github/license/duftcola-dev/Nodejs.svg?style=for-the-badge
 [license-url]: https://github.com/duftcola-dev/Nodejs/blob/master/LICENSE.txt
 [ApacheLicense-url]:https://www.apache.org/licenses/LICENSE-2.0
@@ -250,6 +252,10 @@ Robin Viera - robinviera@hotmail.com
 [linkedin-url]: https://www.linkedin.com/in/robin-viera-17aa2378/
 [product-screenshot]: images/screenshot.png
 [Docker]:https://img.shields.io/badge/Docker-037ffc?style=for-the-badge&logo=docker&logoColor=white
+[Mocha-url]:https://mochajs.org/
+[Mocha]:https://img.shields.io/badge/Mocha-995809?style=for-the-badge&logo=mocha&logoColor=white
+[PM2-url]:https://pm2.keymetrics.io/
+[PM2]:https://img.shields.io/badge/PM2-6b03fc?style=for-the-badge&logo=pm2&logoColor=white
 [Docker-url]:https://www.docker.com/
 [Swagger]:https://img.shields.io/badge/Swagger-18a10a?style=for-the-badge&logo=swagger&logoColor=blue
 [Swagger-url]:https://swagger.io/
