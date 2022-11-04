@@ -39,44 +39,36 @@
     This is a template for creating services based on Nodejs-Express. This template allows 
     to create backend services quickly of any size. The template comes by default with the following features:
   </p>
-  <ul>
-  <li>Configuration files for production , development and testing</li>
-  <li>Configuration based on environemnt variables</li>
-  <li>Routing</li>
-  <li>Scripts and automation for launching development and production</li>
-  <li>Scripts and automation to create and launch docker and docker-compose containers</li>
-  <li>Unittest with Mocha</li>
-  <li>Unittest and coverage with Postman/Newman</li>
-  <li>Production environment with PM2</li>
-  <li>Secure headers with Helmet</li>
-  <li>File upload (in progress)</li>
-  <li>File download (in progress)</li>
-  </ul>
 </div>
+  <ul>
+    <li>Configuration files for production , development and testing</li>
+    <li>Configuration based on environemnt variables</li>
+    <li>Routing</li>
+    <li>Scripts and automation for launching development and production</li>
+    <li>Scripts and automation to create and launch docker and docker-compose containers</li>
+    <li>Unittest with Mocha</li>
+    <li>Unittest and coverage with Postman/Newman</li>
+    <li>Production environment with PM2</li>
+    <li>Secure headers with Helmet</li>
+    <li>File upload (in progress)</li>
+    <li>File download (in progress)</li>
+  </ul>
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+  <ul>
+  <li><a href="#about-the-project">About The Project</a></li>
+  <li><a href="#built-with">Built With</a></li>
+  <li><a href="#getting-started">Getting Started</a></li>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ul>
 </details>
 
 
