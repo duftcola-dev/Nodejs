@@ -22,7 +22,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MitLicense][MitLicense-shield]][MitLicense-url]
+[![MIT License][license-shield]][MitLicense-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
