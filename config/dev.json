@@ -1,18 +1,24 @@
 {   
+    "configuration":{
+        "tag":"dev"
+    },
     "server":{
         "host":"0.0.0.0",
         "port":8000,
         "cluster":true,
+        "secure_headers":true,
         "secret":"348hdia7e_7ayihsuh_di8y31weq",
         "ssl_key":"",
         "ssl_cert":""
     },
-    "database":{
-        "type":"MongoAtlas",
-        "name":"credentials",
-        "user":"admin",
-        "password":"admin",
-        "host":"localhost",
-        "port":5432
+    "services":{
+        "database":{
+            "type":"MongoAtlas",
+            "name":"credentials",
+            "user":"admin",
+            "password":"admin",
+            "host":"localhost",
+            "port":5432
+        }
     }
 }

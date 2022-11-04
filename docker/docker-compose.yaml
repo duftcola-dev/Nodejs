@@ -7,6 +7,5 @@ services:
       - NODE_ENV=dev
     volumes:
       - ./:/home/node/app
-    expose:
-      - "8000"
-    command: "npm start"
+    ports:
+      - 8000:8000

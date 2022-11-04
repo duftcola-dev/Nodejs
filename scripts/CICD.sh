@@ -11,19 +11,24 @@ if [ "$1" = "build" ];then
     mv ./dockerfile ./docker/dockerfile 
     mv ./.dockerignore ./docker/.dockerignore 
 fi 
+
 # Run docker container
-if [ "$1" = "run" ];then
-    echo "Running docker image: "$image
+if [ "$1" = "docker" ];then
     docker run -td -p 0.0.0.0:8000:8000 -e CI=true -e NODE_ENV=dev --name node_service $image
 fi
-#Execute test
-if [ "$1" = "test" ];then
-    echo "Executing test"
-fi
+# Run docker compose
+if [ "$1" = "compose" ];then
+    mv ./docker/docker-compose.yaml ./docker-compose.yaml
+    docker-compose up -d
+fi 
+
 # Stop container
 if [ "$1" = "stop" ];then
    docker stop node_service
+   docker-compose down
+   mv ./docker-compose.yaml ./docker/docker-compose.yaml 
 fi
+
 # Delete container , delete image
 if [ "$1" = "clear" ];then
    docker rm node_service

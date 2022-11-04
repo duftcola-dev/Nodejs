@@ -1,0 +1,28 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:18-alpine
+
+pipelines:
+  default:
+      - step:
+          name: "Running test with mocha"
+          script:
+            - export NODE_ENV=test 
+            - npm install
+            - npm test
+  branches:
+    development:
+      - step:
+          name: "Running test"
+          script:
+            - npm install
+            - export NODE_ENV=test
+            - npm test
+      - step:
+          name: "Sending notification"
+          script:
+            - if [ "$BITBUCKET_EXIT_CODE" != 0 ]; then echo "something went wrong" ; fi
+            - if [ "$BITBUCKET_EXIT_CODE" = 0 ]; then  echo "Everithing went smooth" ; fi
