@@ -43,6 +43,7 @@ function init(){
         host:load_config.get("server.host"),
         secret:load_config.get("server.secret"),
         cluster:load_config.get("server.cluster"),
+        max_mb:load_config.get("server.max_mb"),
         secure_headers:load_config.get("server.secure_headers"),
         services:load_config.get("services"),
     }
