@@ -192,7 +192,7 @@ In order to use this project is nescessary to have nodejs and npm installed.
 
 - [x] Develop cluster mode functionality
 - [ ] Develop streaming functionalities
-- [ ] Develop file upload/doenload functionalities
+- [ ] Develop file upload/download functionalities
 - [x] Develop scripts for automation
 - [ ] Develop swagger/rest api finctionalities 
 - [x] Develop testing features
