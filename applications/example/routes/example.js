@@ -16,7 +16,9 @@
   example_router.get("/ping",function(req,res){
      res.statusCode=200;
      res.statusMessage="OK";
-     res.end("OK");
+     res.setHeader("Content-Type","text/html");
+     res.render("index.html");
+   
   });
  
  module.exports=example_router;
