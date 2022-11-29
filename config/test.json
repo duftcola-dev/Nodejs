@@ -14,12 +14,12 @@
     },
     "services":{
         "database":{
-            "type":"MongoAtlas",
-            "name":"credentials",
-            "user":"admin",
-            "password":"admin",
-            "host":"localhost",
-            "port":5432
+            "type":"",
+            "name":"",
+            "user":"",
+            "password":"",
+            "host":"",
+            "port":0
         }
     }
 }
